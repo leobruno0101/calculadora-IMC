@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        body {
+            background-color: #fde910;
+        }
+
+        .I1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: #fde910;
+            font-size: 90px;
+            border-radius: 10px;
+            width: 800px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .caixa1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .caixa2 {
+            margin: 10px;
+            background-color: rgb(66, 66, 66);
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: space-around;
+            width: 750px;
+        }
+
+
+        h2{
+            text-align: center;
+        }
+
+        .caixa4{
+            color: #fde910;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .caixa5{
+            display: flex;  
+            flex-direction: row;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        button{
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .Resposta{
+            background-color: white;
+            margin: 10px;
+            height: 100px;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        input{
+            background-color: rgb(66, 66, 66);
+            border-bottom: 1px solid white;
+            color: white;
+            text-align: center;
+            width: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="I1">
+        <h1>Calculadora de IMC</h1>
+    </div>
+    <div class="caixa1">
+        <div class="caixa2">
+        
+                <div class="caixa4">
+                    <h2>HOMEM</h2>
+                    <div class="caixa5">
+                        <h3>Peso:</h3>
+                        <input type="number" id="pesoH">
+                    </div>
+                    <div class="caixa5">
+                        <h3>Altura:</h3>
+                        <input type="number" id="alturaH">
+                    </div>
+                    <button id="CalcularH">Calcular</button>
+                    <div class="Resposta" id="RespostaH"></div>
+                </div>
+                <div class="caixa4">
+                    <h2>MULHER</h2>
+                    <div class="caixa5">
+                        <h3>Peso:</h3>
+                        <input type="number" id="pesoM">
+                    </div>
+                    <div class="caixa5">
+                        <h3>Altura:</h3>
+                        <input type="number" id="alturaM">
+                    </div>            
+                    <button id="CalcularM">Calcular</button>
+                    <div class="Resposta" id="RespostaM"></div>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="IMC.js"></script>
+</body>
+
+</html>
